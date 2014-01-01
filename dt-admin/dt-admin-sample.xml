@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<admin>
+    <root username="" password="" email=""></root>
+    <members>
+    <member admin="" username="" password="" email=""></member>
+    </members>
+    <site title="" anyone="" installed="NO">
+    </site>
+</admin>

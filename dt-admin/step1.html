@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DayText &rsaquo; 调整配置文件</title>
+        <link rel="stylesheet" href="css/install.css?ver=3.8" type="text/css" />
+        <link rel="stylesheet" href="css/buttons.css?ver=3.8" type="text/css" />
+        
+    </head>
+    <body class="dt-core-ui">
+        <h1 id="logo"><a href="http://cn.DayText.org/">DayText</a></h1>
+        <form method="post" action="setup-config.php?step=2">
+            <p>请在下方填写您的数据库连接信息。如果您不确定，请联系您的服务提供商。</p>
+            <table class="form-table">
+                <tr>
+                    <th scope="row"><label for="dbname">数据库名</label></th>
+                    <td><input name="dbname" id="dbname" type="text" size="25" value="DayText" /></td>
+                    <td>将DayText安装到哪个数据库？</td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="uname">用户名</label></th>
+                    <td><input name="uname" id="uname" type="text" size="25" value="用户名" /></td>
+                    <td>您的MySQL用户名</td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="pwd">密码</label></th>
+                    <td><input name="pwd" id="pwd" type="text" size="25" value="密码" /></td>
+                    <td>&hellip;及其密码</td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="dbhost">数据库主机</label></th>
+                    <td><input name="dbhost" id="dbhost" type="text" size="25" value="localhost" /></td>
+                    <td>如果填写<code>localhost</code>之后DayText不能正常工作的话，请向主机服务提供商索要数据库信息。</td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="prefix">表前缀</label></th>
+                    <td><input name="prefix" id="prefix" type="text" value="dt_" size="25" /></td>
+                    <td>如果您希望在同一个数据库安装多个DayText，请修改前缀。</td>
+                </tr>
+            </table>
+            <p class="step"><input name="submit" type="submit" value="提交" class="button button-large" /></p>
+        </form>
+    </body>
+</html>
